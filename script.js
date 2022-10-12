@@ -36,13 +36,13 @@ $(document).ready(function(){
   $(document).on('click','.send', function(){
     /* Inputan Formulir */
     var input_name          = $("#name").val(),
-        input_Email        = $("#Email").val(),
+        input_Email        = $("#Email").val(),   
         input_description   = $("#description").val();
  
     /* Pengaturan Whatsapp */
     var walink      = 'https://web.whatsapp.com/send',
-        phone       = '62895414599871',
-        text        = 'Halo saya ingin memesan ',
+        phone       = '6283147372179',
+        text        = 'Haii Saya dari web Porto Anda !!!',
         text_yes    = 'Pesanan Anda berhasil terkirim.',
         text_no     = 'Isilah formulir terlebih dahulu.';
  
@@ -51,12 +51,12 @@ $(document).ready(function(){
         var walink = 'whatsapp://send';
     }
  
-    if(input_name != "" && input_phone != "" ){
+    if(input_name != "" && input_Email != "" ){
         /* Whatsapp URL */
         var checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A%0A' +
             '*Nama* : ' + input_name + '%0A' +
-            '*Email*  : ' + input_Email + '%0A' +
-            '*Pesan* : ' + input_description + '%0A';
+            '*Email* : ' + input_Email+ '%0A' +
+            '*Catatan* : ' + input_description + '%0A';
  
         /* Whatsapp Window Open */
         window.open(checkout_whatsapp,'_blank');
