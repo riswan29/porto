@@ -41,7 +41,7 @@ $(document).ready(function(){
  
     /* Pengaturan Whatsapp */
     var walink      = 'https://web.whatsapp.com/send',
-        phone       = '6283147372179',
+        phone       = '62895414599871',
         text        = 'Haii Saya dari web Porto Anda !!!',
         text_yes    = 'Pesanan Anda berhasil terkirim.',
         text_no     = 'Isilah formulir terlebih dahulu.';
